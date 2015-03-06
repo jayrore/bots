@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ './' ]
+6 silly cache add args [ './', null ]
+7 verbose cache add spec ./
+8 silly cache add parsed spec { raw: './',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: './',
+8 silly cache add   spec: 'C:\\Users\\jayro\\Documents\\GitHub\\bots',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package.tgz not in flight; packing
+10 verbose tar pack [ 'C:\\Users\\jayro\\AppData\\Roaming\\npm-cache\\bots\\1.0.0\\package.tgz',
+10 verbose tar pack   'C:\\Users\\jayro\\Documents\\GitHub\\bots' ]
+11 verbose tarball C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package.tgz
+12 verbose folder C:\Users\jayro\Documents\GitHub\bots
+13 info prepublish bots@1.0.0
+14 verbose addLocalTarball adding from inside cache C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package.tgz
+15 silly cache afterAdd bots@1.0.0
+16 verbose afterAdd C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package\package.json written
+18 silly publish { name: 'bots',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'my first module',
+18 silly publish   main: 'index.js',
+18 silly publish   repository: { type: 'git', url: 'https://github.com/jayrore/bots.git' },
+18 silly publish   author: { name: 'Jayro Rene Salgado Alvarado' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/jayrore/bots/issues' },
+18 silly publish   homepage: 'https://github.com/jayrore/bots',
+18 silly publish   gitHead: '72fd7aed83bb254578c3c856748575d7be254a4c',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'bots@1.0.0',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: 'b247482aba1449a1e8ae868dfd32f3cd11580667',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name bots
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/bots
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\jayro\AppData\Roaming\npm-cache\bots\1.0.0\package.tgz
+25 verbose request uri https://registry.npmjs.org/bots
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 04:22:56
+28 verbose request id d62f47d1b4d1c4ae
+29 http request PUT https://registry.npmjs.org/bots
+30 http 403 https://registry.npmjs.org/bots
+31 verbose headers { date: 'Fri, 06 Mar 2015 22:22:40 GMT',
+31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '3678',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'x-served-by': 'cache-atl6224-ATL',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1425680560.753144,VS0,VE85',
+31 verbose headers   'keep-alive': 'timeout=10, max=50',
+31 verbose headers   connection: 'Keep-Alive' }
+32 verbose request invalidating C:\Users\jayro\AppData\Roaming\npm-cache\registry.npmjs.org\bots on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: forbidden user: jayrore not authorized to modify bots
+34 verbose stack Changed: description "Build robust networks of bots that can react to events" -> "my first module"
+34 verbose stack Changed: dist-tags.latest "0.0.7" -> "1.0.0"
+34 verbose stack Added: versions.1.0.0
+34 verbose stack Changed: time.modified "2012-02-24T20:46:14.354Z" -> "2015-03-06T22:22:40.797Z"
+34 verbose stack Added: time.1.0.0
+34 verbose stack Changed: author.name "Chris Mytton" -> "Jayro Rene Salgado Alvarado"
+34 verbose stack Deleted: author.email
+34 verbose stack Deleted: author.url
+34 verbose stack Changed: repository.url "git://github.com/hecticjeff/bots.git" -> "https://github.com/jayrore/bots.git"
+34 verbose stack Changed: readme "bots\u000a====\u000a\u000aMake your own robot that knows how to speak many protocols, and can be\u000ataught more.\u000a\u000a## Installing\u000a\u000aBy installing globally you gain access to the `bots(1)` tool which can\u000agenerate bots for you.\u000a\u000a    npm -g install bots\u000a\u000a## Tutorial\u000a\u000aSo, you want to build your own 'bot. You've heard that all the cool hip\u000astartups have their own office 'bot, you know, the one that monitors the\u000aCI system, can deploy the site, play music over the office speakers AND\u000aknows who's in the office based on their smartphones wi-fi presence. Well\u000afollow along and you can build your very own robot servant to perform your\u000anefarious deeds.\u000a\u000aFirst you need to get the parts to build the bot. You'll need to get setup\u000awith [node(1)](http://nodejs.org/) and it's de-facto package manager,\u000a[npm(1)](http://npmjs.org/). Then create a project and get the parts.\u000a\u000a    mkdir coolbot && cd coolbot\u000a    npm install bots\u000a\u000aNow you'll need to give the robot some personality, try putting the following\u000ain a file called `coolbot.js`.\u000a\u000a``` javascript\u000a// Pull in the bots framework.\u000avar bots = require('bots');\u000a\u000a// Create your own cool bot and give it a name.\u000avar coolbot = bots.createBot('coolbot 0.0.1');\u000a\u000a// Tell this cool bot to use the CLI interface (stdin/stdout).\u000acoolbot.use(bots.cli());\u000a\u000a// Add a description and it will appear when the bot hears \"help\".\u000acoolbot.desc('ping', \"Test I'm working with a ping\");\u000a\u000a// Assign an action to the bot, first argument is the regex to match,\u000a// second is the callback to be invoked when this message is matched.\u000acoolbot.hear(/ping/, function(message) {\u000a\u000a  // Respond to the person who sent the message, note that you don't\u000a  // *have* to call `message.say`.\u000a  message.say(\"PONG\");\u000a});\u000a\u000a// Start you cool bot listening on the interfaces you have assigned.\u000acoolbot.start();\u000a```\u000a\u000aNow try running it:\u000a\u000a```\u000a$ node coolbot.js ping\u000aPONG\u000a$\u000a```\u000a\u000aThis example uses the `cli` interface, this can be useful for testing, and\u000athe bot can take commands on stdin, so can be used in a pipe, but for other\u000aservices you'll need to `use` different interfaces.\u000a\u000a## Contributing\u000a\u000aGet the code and run the tests.\u000a\u000a    git clone https://github.com/hecticjeff/bots\u000a    cd bots\u000a    npm install\u000a    npm test\u000a\u000a## Credits\u000a\u000aParts of the dsl design were inspired by\u000a[defunkt/evilbot](https://github.com/defunkt/evilbot).\u000a\u000aCopyright (c) 2011 Chris Mytton\u000a" -> "ERROR: No README data found!"
+34 verbose stack Changed: homepage "https://github.com/hecticjeff/bots" -> "https://github.com/jayrore/bots"
+34 verbose stack Deleted: keywords
+34 verbose stack Added: bugs
+34 verbose stack Added: license
+34 verbose stack Added: _attachments: bots
+34 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:254:14)
+34 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:14)
+34 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:344:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1239:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1187:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid bots
+37 verbose cwd C:\Users\jayro\Documents\GitHub\bots
+38 error Windows_NT 6.3.9600
+39 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "./"
+40 error node v0.12.0
+41 error npm  v2.5.1
+42 error code E403
+43 error forbidden user: jayrore not authorized to modify bots
+43 error Changed: description "Build robust networks of bots that can react to events" -> "my first module"
+43 error Changed: dist-tags.latest "0.0.7" -> "1.0.0"
+43 error Added: versions.1.0.0
+43 error Changed: time.modified "2012-02-24T20:46:14.354Z" -> "2015-03-06T22:22:40.797Z"
+43 error Added: time.1.0.0
+43 error Changed: author.name "Chris Mytton" -> "Jayro Rene Salgado Alvarado"
+43 error Deleted: author.email
+43 error Deleted: author.url
+43 error Changed: repository.url "git://github.com/hecticjeff/bots.git" -> "https://github.com/jayrore/bots.git"
+43 error Changed: readme "bots\u000a====\u000a\u000aMake your own robot that knows how to speak many protocols, and can be\u000ataught more.\u000a\u000a## Installing\u000a\u000aBy installing globally you gain access to the `bots(1)` tool which can\u000agenerate bots for you.\u000a\u000a    npm -g install bots\u000a\u000a## Tutorial\u000a\u000aSo, you want to build your own 'bot. You've heard that all the cool hip\u000astartups have their own office 'bot, you know, the one that monitors the\u000aCI system, can deploy the site, play music over the office speakers AND\u000aknows who's in the office based on their smartphones wi-fi presence. Well\u000afollow along and you can build your very own robot servant to perform your\u000anefarious deeds.\u000a\u000aFirst you need to get the parts to build the bot. You'll need to get setup\u000awith [node(1)](http://nodejs.org/) and it's de-facto package manager,\u000a[npm(1)](http://npmjs.org/). Then create a project and get the parts.\u000a\u000a    mkdir coolbot && cd coolbot\u000a    npm install bots\u000a\u000aNow you'll need to give the robot some personality, try putting the following\u000ain a file called `coolbot.js`.\u000a\u000a``` javascript\u000a// Pull in the bots framework.\u000avar bots = require('bots');\u000a\u000a// Create your own cool bot and give it a name.\u000avar coolbot = bots.createBot('coolbot 0.0.1');\u000a\u000a// Tell this cool bot to use the CLI interface (stdin/stdout).\u000acoolbot.use(bots.cli());\u000a\u000a// Add a description and it will appear when the bot hears \"help\".\u000acoolbot.desc('ping', \"Test I'm working with a ping\");\u000a\u000a// Assign an action to the bot, first argument is the regex to match,\u000a// second is the callback to be invoked when this message is matched.\u000acoolbot.hear(/ping/, function(message) {\u000a\u000a  // Respond to the person who sent the message, note that you don't\u000a  // *have* to call `message.say`.\u000a  message.say(\"PONG\");\u000a});\u000a\u000a// Start you cool bot listening on the interfaces you have assigned.\u000acoolbot.start();\u000a```\u000a\u000aNow try running it:\u000a\u000a```\u000a$ node coolbot.js ping\u000aPONG\u000a$\u000a```\u000a\u000aThis example uses the `cli` interface, this can be useful for testing, and\u000athe bot can take commands on stdin, so can be used in a pipe, but for other\u000aservices you'll need to `use` different interfaces.\u000a\u000a## Contributing\u000a\u000aGet the code and run the tests.\u000a\u000a    git clone https://github.com/hecticjeff/bots\u000a    cd bots\u000a    npm install\u000a    npm test\u000a\u000a## Credits\u000a\u000aParts of the dsl design were inspired by\u000a[defunkt/evilbot](https://github.com/defunkt/evilbot).\u000a\u000aCopyright (c) 2011 Chris Mytton\u000a" -> "ERROR: No README data found!"
+43 error Changed: homepage "https://github.com/hecticjeff/bots" -> "https://github.com/jayrore/bots"
+43 error Deleted: keywords
+43 error Added: bugs
+43 error Added: license
+43 error Added: _attachments: bots
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]

@@ -1,15 +1,16 @@
 {
   "name": "bots",
   "version": "1.0.0",
-  "description": "Bootstraping inicial",
+  "description": "my first module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayrore/bots.git"
   },
-  "author": "jayro salgado",
+  "author": "Jayro Rene Salgado Alvarado",
   "license": "ISC",
-  "devDependencies": {
-    "chai": "^2.1.1",
-    "mocha": "^2.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/jayrore/bots/issues"
+  },
+  "homepage": "https://github.com/jayrore/bots"
 }
